@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background: url(https://img.freepik.com/free-photo/lost-spacecraft-damaged-space_456031-88.jpg?w=1380&t=st=1695426128~exp=1695426728~hmac=d5aeb53f2cfe5228d1c56869a782acca110052add3fd477e9f9cca895b145e3a);
+    -webkit-background-size : cover;
+    
+}
+.container-fluid{
+    width: 100%;
+    height: 600px;
+}
+.header{
+
+    width: 100%;
+    height: 400px;
+    padding-top: 160px;
+}
+
+.intro{
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+h3 span {
+    color: yellow;
+    
+}
+.images{
+    width: 50px;
+    border-radius: 50%;
+    padding: 6px;
+   
+}
+.images-link{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.intro{
+    animation: slideRight 1s ease forwards;
+    position: relative;
+}
+.description{
+    color: rgb(215, 215, 46);
+    text-align: center;
+    font-weight: 700;
+    margin-top: 100px;
+    animation: slideTop .1s ease forwards;
+     animation-delay: 1s; 
+    position: relative;
+    
+}
+.line{
+    color: white;
+}
+.text{
+    font-weight: 600;
+}
+
+
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop{
+    0%{
+        transform: translatey(100px);
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
